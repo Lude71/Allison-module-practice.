@@ -1,0 +1,21 @@
+# step 1: create a story template
+story = """ 
+once upon a time [name] went to the [place] where he works as a steward feeling very [adjective].
+on his way he came across a beatiful girl walking [adverb].
+it was the start of along lasting love.
+"""
+# step 2:Ask the user for input
+name = input("Enter your name: ").strip().capitalize()
+place = input("Enter the place :").strip().title()
+adjective = input("Enter the adjective: ").strip().lower()
+adverb = input("Enter the adverb: ").strip().lower()
+
+#replace place holders
+personalized_story = story. replace("[name]",name)
+personalized_story = personalized_story.replace("[place]",place)
+personalized_story = personalized_story.replace("[adjective]",adjective)
+personalized_story = personalized_story.replace("[adverb]",adverb)
+
+#step 4:display the result
+print("\n personalized story:\n")
+print(personalized_story)
