@@ -1,0 +1,8 @@
+a = 65
+b = 16
+height = 4
+area = (a + b)*height/2
+
+#calculate area
+
+print(area)
