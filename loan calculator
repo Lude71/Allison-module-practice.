@@ -1,0 +1,14 @@
+#loan calculator
+loan_amount = float(input("enter yoyr loan amount: "))
+annual_rate = float(input("enyer the annual rate: "))
+years = float(input("enter the years for the loan: "))
+
+#conver interest rate to months and years to months
+monthly_rate = annual_rate / 100 / 12
+number_of_payments = years/12
+
+#apply the loan payment formula
+M = (loan_amount * monthly_rate * (1 + monthly_rate)**number_of_payments) /   ((1 + monthly_rate)**number_of_payments- 1)
+ 
+ #display result
+print("your monthly salary is : {: 2f}".format(M))
