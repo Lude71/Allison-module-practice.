@@ -1,0 +1,9 @@
+# display area of a trapezium
+l1 = 24
+l2 = 17
+height = 5
+area = ( l1 + l2) * height/2
+print(area)
+
+# format decimal
+print("area would be %d" % area)
