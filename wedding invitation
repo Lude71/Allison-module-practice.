@@ -1,0 +1,11 @@
+
+import datetime
+currentdate = datetime.date.today()
+
+
+ #strftime
+print(currentdate.strftime('please attend our event %A ,%B %D in the year %Y'))
+
+userinput = input('please enter your birthday ')
+birthday = datetime.datetime.strptime(userinput, '%m/%d/%Y')
+print(birthday)
