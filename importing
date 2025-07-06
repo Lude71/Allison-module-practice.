@@ -1,0 +1,6 @@
+import datetime
+currentdate = datetime.date.today()
+print(currentdate)
+print(currentdate.month)
+print(currentdate.year)
+print(currentdate.strftime('%b %d,%y'))
