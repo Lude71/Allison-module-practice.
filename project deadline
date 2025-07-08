@@ -1,0 +1,23 @@
+from datetime import datetime
+
+#ask the user to enter the datetime
+deadline_input = input("Enter your project deadline (YYY - MM - DD):")
+
+# Convert the input to a datetime object
+deadline = datetime.strptime(deadline_input, "%Y-%m-%d")
+
+
+#Getting todays date
+today = datetime.today()
+
+#number of days remaining
+days_left = (deadline - today).days
+
+#output number of days
+print(f"\n you have {days_left} days to complete the project .")
+
+#converting days and weeks
+weeks = days_left//7
+extra_days = days_left % 7
+
+print(f"That’s approximately {weeks} week(s) and {extra_days} days.")
