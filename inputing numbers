@@ -1,0 +1,10 @@
+# paycheck
+salary = input("Please enter our salary ")
+bonus = input("please enter your bonus ")
+paycheckamount = float(salary) + float( bonus)
+print(paycheckamount)
+
+#loan calculator
+loan_amount = float(input("enter yoyr loan amount: "))
+annual_rate = float(input("enyer the annual rate: "))
+years = float(input("enter te years for the loan: "))
