@@ -1,0 +1,6 @@
+# favourite course
+favouritecourse = input("what is your favourute engineering course? ")
+if favouritecourse == "telecommunication and information engineering" :
+  print("yeah i love it")
+print("but i dont like calculus")
+print("its okay if you like nursing")    
