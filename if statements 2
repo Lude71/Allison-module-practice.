@@ -1,0 +1,10 @@
+answer = input("would you like to expres shipping? ")
+if answer.lower() == "yes":
+    print("that will be an extra $10")
+print("have a nice day")
+
+#toaster
+deposit = 300
+if deposit > 200:
+    print("you get an extra toaster!")
+print("have a nice day")
