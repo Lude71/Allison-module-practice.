@@ -1,0 +1,5 @@
+# it strings
+deposit = int(input("how much do you want to deposit? "))
+if deposit > 100 :
+    print("enjoy your toaster!")
+print("have a nice day!")
