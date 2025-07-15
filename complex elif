@@ -1,0 +1,11 @@
+team = input("Enter your favourite team: ").upper()
+if team == "manchester united":
+    print("glory glory man united!!")
+elif team == "chelsea" :
+    print("the blues!")   
+elif team == "arsenal" :
+    print("the gurners")   
+else:
+    print("i love liverpool")
+    
+
