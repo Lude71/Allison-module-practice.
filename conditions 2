@@ -1,0 +1,18 @@
+country= input('Enter your country: \n').upper()
+pet= input('Enter the pet name: \n').upper()
+countryIskenya = False
+if country == "kenya":
+    countryIskenya = True
+petIscorrect = False
+if pet == "goat" or pet == "dog":
+    petIscorrect = True
+    
+if countryIskenya and petIscorrect:
+    print("Do you play footbal too")  
+        
+if country == "KENYA" and (pet == "DOG" or pet == "GOAT"):
+    print("Do you play football too")
+else:
+    print("you're Jamaican")
+    
+KeyboardInterrupt
