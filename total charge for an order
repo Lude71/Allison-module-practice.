@@ -1,0 +1,25 @@
+# Get user input
+country = input("Which country are you from? ").strip().upper()
+order_total = float(input("What is your order total? "))
+
+# Initialize tax
+tax_rate = 0.0
+
+# Check if the user is from Canada
+if country == "KENYA":
+    province = input("Which province are you from? ").strip().upper()
+    
+    if province == "CENTRAL":
+        tax_rate = 0.05  # 5% GST
+    elif province in ["NYANZA", "NEW RIFT VALLEY", "WESTERN"]:
+        tax_rate = 0.13  # 13% HST
+    else:
+        tax_rate = 0.06 + 0.05  # 6% provincial + 5% GST
+
+# Calculate total with tax
+tax_amount = order_total * tax_rate
+total_with_tax = order_total + tax_amount
+
+# Output result
+print(f"Tax amount: ${tax_amount:.2f}")
+print(f"Total amount to charge: ${total_with_tax:.2f}")
