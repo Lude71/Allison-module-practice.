@@ -1,0 +1,38 @@
+def atm():
+    balance = 1000  # starting balance
+    pin = "1234"
+
+    entered_pin = input("Enter your PIN: ")
+    if entered_pin != pin:
+        print("❌ Incorrect PIN.")
+        return
+
+    while True:
+        print("\n==== ATM Menu ====")
+        print("1. Check Balance")
+        print("2. Deposit")
+        print("3. Withdraw")
+        print("4. Exit")
+
+        choice = input("Choose an option (1–4): ")
+
+        if choice == "1":
+            print(f"💰 Your balance is: KES {balance}")
+        elif choice == "2":
+            amount = float(input("Enter amount to deposit: "))
+            balance += amount
+            print("✅ Deposit successful.")
+        elif choice == "3":
+            amount = float(input("Enter amount to withdraw: "))
+            if amount > balance:
+                print("❌ Insufficient balance.")
+            else:
+                balance -= amount
+                print("✅ Withdrawal successful.")
+        elif choice == "4":
+            print("👋 Thank you for using the ATM.")
+            break
+        else:
+            print("❌ Invalid choice.")
+
+atm()
