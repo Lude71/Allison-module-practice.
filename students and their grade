@@ -1,0 +1,32 @@
+def assign_grade(score):
+    if 80 <= score <= 100:
+        return 'A'
+    elif 70 <= score < 80:
+        return 'B'
+    elif 60 <= score < 70:
+        return 'C'
+    elif 50 <= score < 60:
+        return 'D'
+    else:
+        return 'F'
+
+students = []
+
+n = int(input("Enter number of students: "))
+
+for i in range(n):
+    print(f"\nEnter details for student {i + 1}")
+    name = input("Name: ")
+    score = int(input(f"Score for {name}: "))
+    grade = assign_grade(score)
+
+    student_data = {
+        'name': name,
+        'score': score,
+        'grade': grade
+    }
+    students.append(student_data)
+
+print("\nSummary:")
+for student in students:
+    print(f"Name: {student['name']} | Score: {student['score']} | Grade: {student['grade']}")
